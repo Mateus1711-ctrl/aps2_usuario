@@ -20,7 +20,7 @@ jobs:
           cache: maven
 
       - name: Build com Maven
-        run: mvn -B package --file pom.xml
+        run: mvn -B package --file usuario/pom.xml
 
       - name: Login no Docker Hub
         uses: docker/login-action@v3
