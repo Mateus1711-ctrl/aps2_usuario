@@ -34,8 +34,8 @@ jobs:
       - name: Build e push da imagem Docker
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./usuario
+          file: ./usuario/Dockerfile
           push: true
           tags: mateus1711/usuario-ci:${{ github.sha }}
 
